@@ -29,3 +29,16 @@ fun2 n
 -- ok...this predominately a sum of a list of numbers, if there even we take that number add it it our list
 -- then divide it by t
 -- if it was odd, we triple the number and add 1 (which will get us to an even)
+
+
+-- exercise 2 fold tree
+-- implement a binary three using foldr
+-- also must be balanced (all trees and subtrees are no more than 1 apart), order not important
+
+
+-- exercise 3 more folds
+-- implement xor
+
+-- implement map with foldr
+map' :: (a -> b) -> [a] -> [b]
+map' f xs = foldr (\x acc -> f x : acc) [] xs
